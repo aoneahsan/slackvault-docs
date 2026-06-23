@@ -1,0 +1,79 @@
+/**
+ * SlackVault — brand palette
+ * Primary: Slack aubergine (#4a154b family). Accent: Slack blue (#36C5F0).
+ */
+
+:root {
+  --ifm-color-primary: #611f69;
+  --ifm-color-primary-dark: #571c5e;
+  --ifm-color-primary-darker: #4a154b;
+  --ifm-color-primary-darkest: #3d1140;
+  --ifm-color-primary-light: #722880;
+  --ifm-color-primary-lighter: #7e2c8d;
+  --ifm-color-primary-lightest: #9a4aa8;
+
+  --ifm-color-secondary: #36c5f0;
+  --ifm-color-success: #2eb67d;
+  --ifm-color-info: #36c5f0;
+  --ifm-color-warning: #ecb22e;
+  --ifm-color-danger: #e01e5a;
+
+  --ifm-code-font-size: 92%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --ifm-heading-font-weight: 700;
+
+  --docusaurus-highlighted-code-line-bg: rgba(97, 31, 105, 0.10);
+
+  /* Soft accent surfaces used by callouts + the author card */
+  --sv-surface-accent: rgba(54, 197, 240, 0.06);
+  --sv-surface-brand: rgba(97, 31, 105, 0.06);
+}
+
+/* Dark mode — keep brand recognisable, raise contrast */
+[data-theme='dark'] {
+  --ifm-color-primary: #d49bdd;
+  --ifm-color-primary-dark: #c87fd3;
+  --ifm-color-primary-darker: #c171ce;
+  --ifm-color-primary-darkest: #a948b8;
+  --ifm-color-primary-light: #e0b7e7;
+  --ifm-color-primary-lighter: #e6c5ec;
+  --ifm-color-primary-lightest: #f1ddf5;
+
+  --ifm-background-color: #170a19;
+  --ifm-background-surface-color: #211024;
+
+  --docusaurus-highlighted-code-line-bg: rgba(212, 155, 221, 0.18);
+}
+
+/* CSS-only entrance animation (respects reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  .markdown > h1,
+  .markdown > h2 {
+    animation: sv-fade-up 420ms ease-out both;
+  }
+  @keyframes sv-fade-up {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+.theme-code-block {
+  border-radius: 10px;
+}
+
+/* Author callout used on the about-the-author page (no extra component needed) */
+.nu-author-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  background: var(--sv-surface-brand);
+  margin: 1.5rem 0;
+}
+
+.nu-author-card a {
+  font-weight: 600;
+}

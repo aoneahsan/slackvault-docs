@@ -1,0 +1,28 @@
+# SlackVault — Security Contact (RFC 9116)
+# https://slackvault-docs.aoneahsan.com/.well-known/security.txt
+
+Contact: mailto:aoneahsan@gmail.com
+Contact: https://aoneahsan.com
+Expires: 2027-06-23T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://slackvault-docs.aoneahsan.com/.well-known/security.txt
+
+# Responsible disclosure policy
+#
+# Please report any security issue affecting SlackVault (web app, browser
+# extension, OAuth worker, or docs site) via email to aoneahsan@gmail.com.
+# Include:
+#
+#   1. A description of the issue and the affected component
+#      (website / extension / worker / docs site).
+#   2. Steps to reproduce.
+#   3. The impact you assess.
+#   4. Your contact details and (optionally) a PGP public key.
+#
+# Initial response target: within 72 hours.
+# Note: SlackVault stores user Slack data in the USER's own Firebase project
+# and FilesHub account — not on any SlackVault server. Reports about a
+# specific user's data should be directed to that user's own infrastructure.
+#
+# Out of scope: denial-of-service, social engineering, physical access
+# attacks, and findings that depend on a jailbroken / rooted device.
