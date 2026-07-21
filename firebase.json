@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "slackvault-docs",
     "public": "build",
     "ignore": [
       "firebase.json",

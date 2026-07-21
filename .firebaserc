@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "slackvault-docs"
+    "default": "slackvault"
   },
   "targets": {},
   "etags": {}
