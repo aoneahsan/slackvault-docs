@@ -2,12 +2,12 @@
 
 Public documentation site for **SlackVault** — a zero-cost Slack backup and archive platform.
 
-- **Live site (after deploy)**: https://slackvault-docs.aoneahsan.com
+- **Live site**: https://slackvault-docs.aoneahsan.com
 - **Product / web app**: https://slackvault.aoneahsan.com
 - **Google Play**: https://play.google.com/store/apps/details?id=com.aoneahsan.slackvault
 - **Author**: [Ahsan Mahmood](https://aoneahsan.com)
 
-Built with [Docusaurus 3](https://docusaurus.io/), deployed to Firebase Hosting. The SlackVault
+Built with [Docusaurus 3](https://docusaurus.io/), deployed to GitHub Pages. The SlackVault
 app itself lives in a separate (private) repository.
 
 ---
@@ -22,8 +22,8 @@ yarn typecheck      # tsc --noEmit
 yarn serve          # preview the built site at http://localhost:5963
 ```
 
-> Per the project's standing rules, the agent never runs the dev server — it verifies with
-> `yarn build` + `yarn typecheck`. The user runs `yarn start` to preview.
+The built site was loaded locally in controlled Chrome on 2026-10-14. This verifies public page
+rendering; it does not test the product's authenticated Slack flows.
 
 ## Structure
 
@@ -35,12 +35,12 @@ yarn serve          # preview the built site at http://localhost:5963
 | `src/css/custom.css` | SlackVault brand palette (Slack aubergine). |
 | `src/pages/index.tsx` | Landing page. |
 | `static/` | `robots.txt`, `llms.txt`, `humans.txt`, `.well-known/security.txt`, images. |
-| `firebase.json` / `.firebaserc` | Firebase Hosting config (site `slackvault-docs`). |
+| `.github/workflows/deploy-pages.yml` / `static/CNAME` | GitHub Pages build and custom domain. |
 
 ## Deploy
 
-See [`DEPLOY.md`](./DEPLOY.md). The site is a static build deployable to Firebase Hosting or
-GitHub Pages at `slackvault-docs.aoneahsan.com`.
+See [`DEPLOY.md`](./DEPLOY.md). A push to `main` builds and deploys the static site to GitHub
+Pages at `slackvault-docs.aoneahsan.com`.
 
 ## Content rule
 
