@@ -1,8 +1,8 @@
 # SlackVault public docs
 
-**Last Updated:** 2026-10-20
+**Last Updated:** 2026-10-21
 
-**Last context pass:** 2026-10-14. **Next routine context pass:** 2026-11-13. The workspace tracker at `01-code/docs/tracking/project-context-budget-tracker.json` is the fleet record. A new tree, hard cap breach, or proven stale instruction may justify an earlier review.
+**Last context pass:** 2026-10-21. **Next routine context pass:** 2026-11-20. The workspace tracker at `01-code/docs/tracking/project-context-budget-tracker.json` is the fleet record. A new tree, hard cap breach, or proven stale instruction may justify an earlier review.
 
 Keep this file and its `CLAUDE.md` mirror synchronized. Read only the guide pair for the surface being changed, plus the product root and workspace guides. Use Yarn for local packages. Never install or copy an owner-created client package into this owner project. Real `.env` values and secrets stay local or under `~/.secrets/`; private Git visibility is not a secrets boundary. Historical tracked `.env` files require credential review. Do not deploy the legacy Firebase backend while the owner prepares a Supabase redevelopment.
 
@@ -12,7 +12,7 @@ This separate public `aoneahsan/slackvault-docs` `main` repository contains the 
 
 ## Commands
 
-`yarn install --immutable && yarn typecheck && yarn build`; `yarn serve` previews the built site on port 5963. The 2026-10-14 typecheck/build and local desktop browser rendering passed. Current docs content describes the legacy Firebase architecture; do not silently rewrite product claims for the later Supabase rebuild.
+`yarn install --immutable && yarn typecheck && yarn build`; `yarn serve` previews the built site on port 5963. The 2026-10-21 immutable install, typecheck, Docusaurus build, and clean controlled Chrome desktop/mobile rendering passed after supported package and Pages action updates. Current docs content describes the legacy Firebase architecture; do not silently rewrite product claims for the later Supabase rebuild.
 
 ## Stop-work Git gate
 
