@@ -1,0 +1,51 @@
+# SlackVault — Documentation Index
+
+> SlackVault is a zero-cost Slack backup and archive platform. It connects a Slack
+> workspace through OAuth, syncs messages, channels, threads, files, and the user
+> directory through a Manifest V3 browser extension, and stores everything in
+> infrastructure the user controls (their own Firebase free tier + FilesHub) rather
+> than a paid third-party vendor backend. A web app then lets users browse, full-text
+> search, and export their archived Slack history. Author: Ahsan Mahmood (https://aoneahsan.com).
+
+## About
+
+SlackVault runs on a zero-server architecture: the browser extension performs the sync
+locally, a Cloudflare Worker handles only the Slack OAuth code exchange and token refresh,
+the website is statically hosted, and all archived data lands in the user's own Firebase
+Firestore (free tier) with file attachments in FilesHub. The Slack OAuth scopes are strictly
+read-only — SlackVault cannot post or modify anything in a workspace. Product site:
+https://slackvault.aoneahsan.com.
+
+This `llms.txt` follows the [llmstxt.org](https://llmstxt.org) spec — a structured index for
+large language models.
+
+## Getting Started
+
+- [Introduction](https://slackvault-docs.aoneahsan.com/intro): what SlackVault is, who it's for, and the four surfaces (website, extension, worker, Slack app).
+- [Installation](https://slackvault-docs.aoneahsan.com/getting-started/installation): prerequisites and the full setup path (Slack app, Firebase, extension, connect).
+- [Quick Start](https://slackvault-docs.aoneahsan.com/getting-started/quick-start): the 5-minute first backup.
+
+## Guides
+
+- [Create the Slack app](https://slackvault-docs.aoneahsan.com/guides/slack-app-setup): create from manifest, copy credentials, install to workspace.
+- [Configure Firebase](https://slackvault-docs.aoneahsan.com/guides/firebase-setup): create a project, enable Firestore, get the config, set security rules.
+- [Browser extension](https://slackvault-docs.aoneahsan.com/guides/browser-extension): install, configure, sync settings, keyboard shortcuts, troubleshooting.
+- [Syncing & the archive](https://slackvault-docs.aoneahsan.com/guides/syncing-and-archive): how syncs work, incremental sync, browsing channels, threads, files, users.
+- [Search & export](https://slackvault-docs.aoneahsan.com/guides/search-and-export): full-text search filters; JSON / CSV / PDF export formats.
+
+## Reference
+
+- [Feature catalog](https://slackvault-docs.aoneahsan.com/reference/features): every feature with a one-line description.
+- [Architecture](https://slackvault-docs.aoneahsan.com/reference/architecture): the four surfaces and how OAuth, sync, and storage flow between them.
+- [Slack OAuth scopes](https://slackvault-docs.aoneahsan.com/reference/slack-scopes): every requested scope and the data it grants (all read-only).
+- [Data model](https://slackvault-docs.aoneahsan.com/reference/data-model): Firestore collection layout and message/channel/user/file object shapes.
+- [Slack API & rate limits](https://slackvault-docs.aoneahsan.com/reference/api-and-rate-limits): endpoints used, Slack rate-limit tiers, sync-time estimates.
+
+## FAQ
+
+- [Frequently asked questions](https://slackvault-docs.aoneahsan.com/faq): security & privacy, data storage, cost, features, and usage.
+
+## Notes
+
+- Zero-cost: Firebase free tier (1 GiB / 50K reads-per-day / 20K writes-per-day), Cloudflare Workers free tier, FilesHub, and client-side processing.
+- Privacy: Slack workspace data is user-owned and stays in user-controlled storage; message content is never used for analytics; Slack scopes are read-only.

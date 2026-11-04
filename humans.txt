@@ -1,0 +1,24 @@
+/* TEAM */
+
+Maintainer + Author: Ahsan Mahmood
+Site: https://aoneahsan.com
+Email: aoneahsan@gmail.com
+LinkedIn: https://linkedin.com/in/aoneahsan
+GitHub: https://github.com/aoneahsan
+npm: https://www.npmjs.com/~aoneahsan
+Location: Pakistan
+
+/* THANKS */
+
+To the Slack platform team for the Web API this project reads from. To the
+Firebase and Cloudflare Workers free tiers that make a zero-cost backup
+platform possible. To everyone who values owning their own data.
+
+/* SITE */
+
+Last update: 2026-06-23
+Standards: HTML5, CSS3, Markdown, JSON-LD
+Components: Docusaurus 3 (https://docusaurus.io/), React 19, TypeScript 6, Mermaid
+Hosting: Firebase Hosting
+Product: https://slackvault.aoneahsan.com
+Source: https://github.com/aoneahsan/slackvault-docs
