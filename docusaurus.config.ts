@@ -30,13 +30,6 @@ const config: Config = {
     {
       tagName: 'link',
       attributes: {
-        rel: 'canonical',
-        href: 'https://slackvault-docs.aoneahsan.com/',
-      },
-    },
-    {
-      tagName: 'link',
-      attributes: {
         rel: 'alternate',
         type: 'application/xml',
         title: 'SlackVault Docs sitemap',
