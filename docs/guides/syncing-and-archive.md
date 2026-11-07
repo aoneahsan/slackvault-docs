@@ -30,7 +30,7 @@ for the details and sync-time estimates.
 | Direct messages & group DMs | If included in settings |
 | Threads | Full reply chains, relationships preserved |
 | Reactions | Emoji name + the users who reacted |
-| Files | Metadata always; the file itself downloaded to FilesHub if "include files" is on |
+| Files | Metadata always; a copy on our file storage at a public, hard-to-guess link when copying is switched on in our extension build |
 | Users | The full workspace directory — names, profiles, roles, emails |
 | Workspace | Name, domain, icon |
 
@@ -54,7 +54,7 @@ up:
 - **Channels** — browse channel-by-channel; each shows its message history.
 - **Messages & threads** — messages render with their author, timestamp, reactions, and any
   attached files. Click a threaded message to open the thread pane with full context.
-- **Files** — a file browser/grid with previews, backed by the file metadata and FilesHub URLs.
+- **Files** — a file browser/grid with previews, backed by the file metadata and its links.
 - **Users** — the workspace user directory with profiles and contact info.
 
 ## Sync status

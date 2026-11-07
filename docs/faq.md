@@ -25,8 +25,7 @@ your Firebase project.
 
 ### What happens to my Slack credentials?
 
-Your Slack OAuth token is stored locally in your browser's extension storage, encrypted by the
-browser, and never sent to a SlackVault server. The token has **read-only** permissions — it cannot
+Your Slack OAuth token is stored locally in your browser's extension storage, and never sent to a SlackVault server. The token has **read-only** permissions — it cannot
 modify your Slack workspace.
 
 ### Do you collect analytics on my Slack content?
@@ -36,7 +35,7 @@ blockable web analytics, but your archived Slack content is not analyzed.
 
 ### What if SlackVault disappears?
 
-Your data is safe. Because it's stored in **your** Firebase, you keep full access even if SlackVault
+Your messages are safe. Because they're stored in **your** Firebase, you keep full access even if SlackVault
 stops existing. You can export it any time, and it's in standard formats (JSON / Firestore) that any
 tool can read.
 
@@ -46,13 +45,11 @@ tool can read.
 
 In your personal Firebase Firestore database. During setup you provide your own Firebase config, and
 all messages, users, channels, and file metadata go directly there. SlackVault has no database of
-your content.
+your messages.
 
 ### What about file attachments?
 
-File **metadata** is stored in Firestore. The actual files are downloaded and stored in **FilesHub**
-(a free file-storage service) so they remain accessible after Slack's URLs expire. You can also
-configure the extension to skip file downloads.
+File **metadata** is stored in Firestore. When file copying is switched on in our extension build, each file uploads to our file storage with public visibility: a hard-to-guess link that anyone holding it can open. It isn't private storage, and it isn't your Firebase project or Google Drive. Where copying is off, your archive keeps the file's details and Slack's link, which works only while Slack serves that file.
 
 ### How much data can I store?
 
@@ -78,14 +75,13 @@ SlackVault captures the state at sync time. You can manually delete it from your
 
 ### Is SlackVault really free?
 
-Yes. There's no charge for the extension, website, or OAuth service. The only potential costs are
-from Firebase (the free tier is usually enough) and FilesHub (whose free tier includes generous
-storage).
+Yes. There's no charge for the extension, website, or OAuth service. The only potential cost is
+from your own Firebase project (the free tier is usually enough).
 
 ### How can it be free if it costs money to run?
 
 A zero-server architecture: the extension runs in your browser, OAuth is a Cloudflare Worker (free
-tier), the website is statically hosted (free tier), and your data goes to **your** Firebase. The
+tier), the website is on Cloudflare Pages (free tier), and your messages go to **your** Firebase. The
 operator's compute cost is effectively zero.
 
 ### Are there hidden costs?
@@ -128,7 +124,7 @@ native search, especially for free-tier workspaces.
 
 ### What export formats are available?
 
-JSON (full data + metadata), CSV (tabular for spreadsheets), and PDF (formatted, readable
+JSON (full data + metadata), CSV (tabular for spreadsheets), and HTML or Markdown (readable
 conversation logs). Export a single channel or your entire backup.
 
 ---

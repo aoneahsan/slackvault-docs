@@ -10,23 +10,23 @@ keywords: [slack backup, slack archive, slack export, slackvault, self-hosted sl
 
 # Introduction to SlackVault
 
-**SlackVault is a zero-cost Slack backup and archive platform.** It lets you save every message,
-file, and conversation from your Slack workspace into storage you control — your own Firebase
-project and FilesHub account — and then browse, search, and export that archive whenever you need
+**SlackVault is a zero-cost Slack backup and archive platform.** It lets you save every message
+and conversation your Slack plan still returns into your own Firebase
+project, and then browse, search, and export that archive whenever you need
 it.
 
-Unlike a hosted vendor backup, SlackVault never stores your data on a SlackVault server. The
+SlackVault never stores your messages on a SlackVault server. The
 browser extension syncs locally, a small Cloudflare Worker handles only the Slack OAuth handshake,
-and everything ends up in **your** infrastructure. If SlackVault disappeared tomorrow, your archive
+and messages end up in **your** Firebase project. File copies are the exception: see [What SlackVault does not do](/compare). If SlackVault disappeared tomorrow, your archive
 would still be sitting in your Firebase, in standard formats you can read with any tool.
 
 ## Why SlackVault exists
 
-Slack's free plan limits how far back you can see your own history, and even paid plans don't make
-it easy to keep a portable, searchable, offline copy. SlackVault solves that with three principles:
+Slack is very good, and its paid plans keep unlimited history. Its Free plan keeps 90 days, which is hard on a team with no
+revenue yet. SlackVault is not affiliated with or endorsed by Slack. It works on three principles:
 
-- **Your data stays yours.** Messages, files, channels, and users live in your own Firebase project. SlackVault has no database of your content.
-- **Zero ongoing cost.** It runs entirely on free tiers — Firebase free tier, a Cloudflare Worker for OAuth, FilesHub for files, and a browser extension that does the work locally.
+- **Your messages stay yours.** Messages, channels, users and file records live in your own Firebase project. SlackVault has no database of your messages.
+- **Zero ongoing cost.** It runs entirely on free tiers — Firebase free tier, a Cloudflare Worker for OAuth, and a browser extension that does the work locally.
 - **Fast setup.** A typical first-time setup takes about five minutes.
 
 ## The four surfaces

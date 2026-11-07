@@ -1,0 +1,13 @@
+.wrap {
+  overflow-x: auto;
+}
+
+.wrap table {
+  display: table;
+  width: 100%;
+  font-size: 0.92rem;
+}
+
+.limits li {
+  margin-bottom: 0.5rem;
+}

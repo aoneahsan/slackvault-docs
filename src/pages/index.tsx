@@ -18,23 +18,23 @@ const FEATURES: Feature[] = [
   },
   {
     title: 'Files & media storage',
-    body: 'Images, documents, PDFs, code snippets, and other attachments are backed up via FilesHub, so they stay accessible after Slack retention expires.',
+    body: 'Every shared file gets a record in your archive. File copies, when switched on, sit at a public, hard-to-guess link on our file storage, not in your own storage.',
   },
   {
     title: 'Instant full-text search',
     body: 'Search across every backed-up message, file, and channel, with filters by date, channel, and user — often faster than Slack’s own search.',
   },
   {
-    title: 'Export to JSON, CSV, PDF',
-    body: 'Export a channel or your whole archive as structured JSON, tabular CSV, or readable PDF conversation logs.',
+    title: 'Export to JSON, CSV, HTML, Markdown',
+    body: 'Export a channel or your whole archive as structured JSON, tabular CSV, or readable HTML and Markdown conversation logs.',
   },
   {
     title: 'Your data, your control',
-    body: 'Everything is stored in your own Firebase project and FilesHub account — never on a SlackVault server. Delete anything, anytime.',
+    body: 'Messages are stored in your own Firebase project, never on a SlackVault server. Delete them anytime.',
   },
   {
     title: 'Zero ongoing cost',
-    body: 'Runs entirely on free tiers: Firebase free tier, a Cloudflare Worker for OAuth, FilesHub, and a browser extension that syncs locally.',
+    body: 'Runs entirely on free tiers: Firebase free tier, a Cloudflare Worker for OAuth, and a browser extension that syncs locally.',
   },
 ];
 

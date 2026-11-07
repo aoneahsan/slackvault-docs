@@ -2,17 +2,18 @@
 
 > SlackVault is a zero-cost Slack backup and archive platform. It connects a Slack
 > workspace through OAuth, syncs messages, channels, threads, files, and the user
-> directory through a Manifest V3 browser extension, and stores everything in
-> infrastructure the user controls (their own Firebase free tier + FilesHub) rather
-> than a paid third-party vendor backend. A web app then lets users browse, full-text
+> directory through a Manifest V3 browser extension, and stores messages in
+> the user's own Firebase free tier. File copies, when switched on, sit at a public,
+> hard-to-guess link on FilesHub, not in the user's storage. SlackVault is not affiliated
+> with or endorsed by Slack. A web app then lets users browse, full-text
 > search, and export their archived Slack history. Author: Ahsan Mahmood (https://aoneahsan.com).
 
 ## About
 
 SlackVault runs on a zero-server architecture: the browser extension performs the sync
 locally, a Cloudflare Worker handles only the Slack OAuth code exchange and token refresh,
-the website is statically hosted, and all archived data lands in the user's own Firebase
-Firestore (free tier) with file attachments in FilesHub. The Slack OAuth scopes are strictly
+the website is statically hosted, and archived messages land in the user's own Firebase
+Firestore (free tier). The Slack OAuth scopes are strictly
 read-only — SlackVault cannot post or modify anything in a workspace. Product site:
 https://slackvault.aoneahsan.com.
 
@@ -31,7 +32,7 @@ large language models.
 - [Configure Firebase](https://slackvault-docs.aoneahsan.com/guides/firebase-setup): create a project, enable Firestore, get the config, set security rules.
 - [Browser extension](https://slackvault-docs.aoneahsan.com/guides/browser-extension): install, configure, sync settings, keyboard shortcuts, troubleshooting.
 - [Syncing & the archive](https://slackvault-docs.aoneahsan.com/guides/syncing-and-archive): how syncs work, incremental sync, browsing channels, threads, files, users.
-- [Search & export](https://slackvault-docs.aoneahsan.com/guides/search-and-export): full-text search filters; JSON / CSV / PDF export formats.
+- [Search & export](https://slackvault-docs.aoneahsan.com/guides/search-and-export): search filters; JSON / CSV / HTML / Markdown export formats.
 
 ## Reference
 
@@ -45,7 +46,11 @@ large language models.
 
 - [Frequently asked questions](https://slackvault-docs.aoneahsan.com/faq): security & privacy, data storage, cost, features, and usage.
 
+## Moving to SlackVault
+
+- [All comparisons](https://slackvault-docs.aoneahsan.com/compare): guides for moving from Slack's own export, backup tools and other chat apps, with dated sources.
+
 ## Notes
 
-- Zero-cost: Firebase free tier (1 GiB / 50K reads-per-day / 20K writes-per-day), Cloudflare Workers free tier, FilesHub, and client-side processing.
-- Privacy: Slack workspace data is user-owned and stays in user-controlled storage; message content is never used for analytics; Slack scopes are read-only.
+- Zero-cost: Firebase free tier (1 GiB / 50K reads-per-day / 20K writes-per-day), Cloudflare Workers free tier, and client-side processing.
+- Privacy: Slack messages stay in user-controlled storage; file copies, when switched on, are at a public link on FilesHub; message content is never used for analytics; Slack scopes are read-only.

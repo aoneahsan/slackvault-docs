@@ -46,7 +46,6 @@ incremental and much faster.
 | Auto-sync interval | Manual only · Every 6 hours · Every 12 hours · Daily | Daily | How often to automatically sync new messages |
 | Include private channels | Yes / No | Yes | Back up private channels you have access to |
 | Include DMs | Yes / No | Yes | Back up direct messages |
-| Include files | Yes / No | Yes | Back up file attachments (via FilesHub) |
 | Message history depth | Last 30 days · Last 90 days · Last year · All time | All time | How far back to sync |
 
 ## The dashboard

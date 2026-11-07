@@ -39,8 +39,8 @@ extension storage. They never leave your machine for a SlackVault server.
 ## Where things are stored
 
 - **Messages, channels, users, file metadata** → your Firebase **Firestore** database.
-- **File attachments** → **FilesHub** (a free file-storage service). You can also configure the extension to skip file downloads.
-- **Your Slack OAuth token** → your browser's encrypted extension storage.
+- **File attachments** → not your storage. When file copying is switched on in our extension build, each file uploads to our file storage with public visibility: a hard-to-guess link that anyone holding it can open. It isn't private storage, and it isn't your Firebase project or Google Drive. Where copying is off, your archive keeps the file's details and Slack's link, which works only while Slack serves that file.
+- **Your Slack OAuth token** → your browser's extension storage.
 
 ## Common first-setup issues
 

@@ -20,8 +20,8 @@ Canonical: https://slackvault-docs.aoneahsan.com/.well-known/security.txt
 #   4. Your contact details and (optionally) a PGP public key.
 #
 # Initial response target: within 72 hours.
-# Note: SlackVault stores user Slack data in the USER's own Firebase project
-# and FilesHub account — not on any SlackVault server. Reports about a
+# Note: SlackVault stores user Slack messages in the USER's own Firebase project,
+# not on any SlackVault server. File copies, when switched on, are on FilesHub. Reports about a
 # specific user's data should be directed to that user's own infrastructure.
 #
 # Out of scope: denial-of-service, social engineering, physical access

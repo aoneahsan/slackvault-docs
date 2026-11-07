@@ -1,0 +1,14 @@
+SlackVault's Import page reads **one JSON file**, not a ZIP, so a Slack export needs merging first. Unzip it and run this
+inside the folder that holds `users.json` and `channels.json`, with <a href="https://jqlang.org/" target="_blank" rel="noopener noreferrer nofollow">jq</a> installed:
+
+```bash
+jq -n --slurpfile users users.json --slurpfile channels channels.json \
+  --slurpfile msgs <(for c in $(jq -r '.[] | "\(.id):\(.name)"' channels.json); do
+    jq -s --arg id "${c%%:*}" '{($id): add}' "${c#*:}"/*.json
+  done) \
+  '{users: $users[0], channels: $channels[0], messages: ($msgs | add)}' > slackvault-import.json
+```
+
+Then upload `slackvault-import.json` on the **Import** page of the web app, as described in
+[Search & export](/guides/search-and-export#importing-existing-slack-exports). Merge mode adds new records and updates
+existing ones. Private channels and DMs need their own export files, which this command doesn't cover.

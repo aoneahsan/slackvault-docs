@@ -3,8 +3,8 @@ id: search-and-export
 title: Search & export
 sidebar_label: Search & export
 sidebar_position: 5
-description: Full-text search across your backed-up Slack messages, files, and channels, plus exporting to JSON, CSV, or PDF.
-keywords: [slack search, slack export json csv pdf, search slack backup, export slack]
+description: Searching your backed-up Slack messages, files and channels, plus exporting to JSON, CSV, HTML or Markdown.
+keywords: [slack search, slack export json csv html markdown, search slack backup, export slack]
 ---
 
 # Search & export
@@ -25,24 +25,25 @@ Click any result to open the message in full context (including its thread).
 
 ## Importing existing Slack exports
 
-If you already have a Slack export (the ZIP/JSON Slack provides), SlackVault can import it so your
-older history sits alongside what the extension syncs. Use the **Import** page in the web app and
-upload the file.
+If you have a Slack export, SlackVault can import it so your older history sits alongside what the
+extension syncs. The **Import** page reads one JSON file, not a ZIP, so merge the export first:
+[the command is here](/compare/slack#the-steps).
 
 :::note
-Typical Slack exports keep messages inside per-channel folders. If you're importing messages
-directly, they need to be in a `messages` field — see the import screen for the expected shape.
+Slack exports keep messages inside per-channel folders. The importer expects them in one `messages`
+field, keyed by channel ID, beside `users` and `channels`.
 :::
 
 ## Export formats
 
-You can export an individual channel or your **entire** backup in three formats:
+You can export an individual channel or your **entire** backup in four formats:
 
 | Format | Best for | Structure |
 |--------|----------|-----------|
 | **JSON** | Programmatic access, data migration, full backup | Nested objects matching the Slack API responses, with all metadata |
 | **CSV** | Spreadsheet analysis, simple imports | Flat columns: timestamp, user, channel, text, etc. |
-| **PDF** | Legal/compliance, printable archives, sharing | Chronological messages with user names and formatting |
+| **HTML** | Reading in a browser, sharing | Chronological messages with user names |
+| **Markdown** | Notes and plain-text archives | Chronological messages with user names |
 
 ### JSON export shape
 

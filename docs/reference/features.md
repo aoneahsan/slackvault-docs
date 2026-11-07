@@ -14,15 +14,15 @@ A reference list of what SlackVault does. Each item is a real, shipped capabilit
 ## Backup & capture
 
 - **Complete message backup** — public channels, private channels, direct messages, group DMs, threaded conversations, and emoji reactions are captured and preserved from your workspace.
-- **Files & media storage** — images, documents, PDFs, code snippets, videos, and other attachments are backed up (via FilesHub) and remain accessible after Slack's retention expires.
+- **File records** — every shared file gets a record in your Firebase project. When file copying is switched on in our extension build, each file uploads to our file storage with public visibility: a hard-to-guess link that anyone holding it can open. It isn't private storage, and it isn't your Firebase project or Google Drive. Where copying is off, your archive keeps the file's details and Slack's link, which works only while Slack serves that file.
 - **User directory** — a complete record of workspace members: roles, profiles, email addresses, and metadata.
 - **Threads & reactions** — full thread reply chains and all emoji reactions with user attribution; thread relationships are preserved so conversations read in context.
 
 ## Find & use your data
 
-- **Instant full-text search** — search across all messages, files, and channels, with filters by date, channel, and user.
-- **Export options** — export as **JSON** (full data + metadata), **CSV** (tabular for spreadsheets), or **PDF** (readable conversation logs). Export a single channel or your whole archive.
-- **Import** — bring in an existing Slack export (ZIP/JSON) so older history sits alongside synced data.
+- **Search** — checks the most recent page of messages, up to 50 per query, with filters by date, channel, and user.
+- **Export options** — export as **JSON** (full data + metadata), **CSV** (tabular for spreadsheets), or **HTML** and **Markdown** (readable conversation logs). Export a single channel or your whole archive.
+- **Import** — bring in one JSON file (a SlackVault export, or Slack export data merged into one file) so older history sits alongside synced data.
 
 ## Sync & control
 
@@ -33,7 +33,7 @@ A reference list of what SlackVault does. Each item is a real, shipped capabilit
 
 ## Ownership & privacy
 
-- **Your data, your control** — everything is stored in your own Firebase project and FilesHub account. Delete individual messages, entire channels, or all SlackVault data anytime.
+- **Your messages, your control** — messages are stored in your own Firebase project. Delete individual messages, entire channels, or all SlackVault data anytime. File copies are not in your storage (see above).
 - **Read-only Slack access** — every OAuth scope is read-only; SlackVault cannot post or modify anything in your workspace.
 - **No content analytics** — Slack message content is never used for analytics.
 - **Multi-workspace** — connect multiple workspaces; each stores data in its own Firebase collection.

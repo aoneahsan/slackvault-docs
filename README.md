@@ -45,5 +45,5 @@ Pages at `slackvault-docs.aoneahsan.com`.
 ## Content rule
 
 Every fact comes from the real SlackVault app code (`slackvault/website/src/pages/docs/*`,
-`slackvault/slack-app/*`). No invented features, no hype. SlackVault stores user data in the
-user's own Firebase and FilesHub — never on a SlackVault server.
+`slackvault/slack-app/*`). No invented features, no hype. SlackVault stores messages in the
+user's own Firebase, never on a SlackVault server.

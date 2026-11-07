@@ -42,7 +42,7 @@ flowchart LR
 2. Slack redirects back with a temporary **code**.
 3. The extension passes the code to the **Cloudflare Worker**, which exchanges it with Slack using
    the **client secret** (held only in the worker).
-4. The worker returns the access token to the extension, which stores it in encrypted browser
+4. The worker returns the access token to the extension, which stores it in browser
    storage.
 5. The worker also handles **token refresh** when needed.
 
@@ -52,8 +52,8 @@ the Slack client secret lives only in the worker** — never in the website or t
 ## Where data lives
 
 - **Firestore (your project)** — messages, channels, users, file metadata, workspace meta.
-- **FilesHub** — the actual file attachments.
-- **Browser extension storage** — your Slack OAuth token (encrypted by the browser).
+- **FilesHub** — our file storage, not yours. Copies of file attachments, at a public, hard-to-guess link, when copying is switched on in our extension build.
+- **Browser extension storage** — your Slack OAuth token.
 
 SlackVault operators never see any of it.
 
@@ -63,11 +63,9 @@ Every surface fits within a free tier:
 
 - Firebase free tier (1 GiB storage, 50K reads/day, 20K writes/day).
 - Cloudflare Workers free tier for the OAuth exchange.
-- FilesHub for file storage.
 - The extension does the heavy lifting client-side, so there's no server compute to pay for.
 
-This is also why a **Google Drive storage adapter is intentionally not built** — FilesHub keeps the
-architecture zero-cost with one external store.
+SlackVault does not store files in your Google Drive today. When file copying is switched on in our extension build, each file uploads to our file storage with public visibility: a hard-to-guess link that anyone holding it can open. It isn't private storage, and it isn't your Firebase project or Google Drive. Where copying is off, your archive keeps the file's details and Slack's link, which works only while Slack serves that file.
 
 For the exact Firestore layout, see the [Data model](/reference/data-model); for Slack API usage and
 limits, see [Slack API & rate limits](/reference/api-and-rate-limits).

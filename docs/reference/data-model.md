@@ -122,8 +122,8 @@ e.g. `1234567890.123456`.
 
 :::warning
 `url_private` / `url_private_download` require Slack authentication. SlackVault stores file metadata
-in Firestore but downloads the actual file to **FilesHub** for permanent storage, so it stays
-available after the Slack URL expires.
+in Firestore. When copying is switched on in our extension build, it uploads a copy to **FilesHub** with
+public visibility, at a hard-to-guess link anyone holding it can open.
 :::
 
 ## Common error codes

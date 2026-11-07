@@ -94,8 +94,7 @@ const config: Config = {
           url: 'https://aoneahsan.com',
         },
         description:
-          'Zero-cost Slack backup and archive platform. Connect a Slack workspace via OAuth, sync messages, channels, threads, files, and users through a browser extension, and store everything in your own Firebase free tier and FilesHub. Search and export your archive from the web app.',
-        license: 'https://opensource.org/licenses/MIT',
+          'Zero-cost Slack backup and archive platform. Connect a Slack workspace via OAuth, sync messages, channels, threads, file records, and users through a browser extension, and store them in your own Firebase free tier. Search and export your archive from the web app.',
       }),
     },
     {
@@ -240,6 +239,7 @@ const config: Config = {
             { label: 'Installation', to: '/getting-started/installation' },
             { label: 'Quick Start', to: '/getting-started/quick-start' },
             { label: 'FAQ', to: '/faq' },
+            { label: 'Moving to SlackVault', to: '/compare' },
           ],
         },
         {
