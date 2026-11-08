@@ -22,4 +22,4 @@ SlackVault suits a team without a backup budget yet that wants its messages in a
 3. **Before you cancel, download what you want to keep** through ProBackup's own export, and keep that file. SlackVault's importer won't read it.
 4. **Cancel on ProBackup's side** once your Firebase project holds what you need.
 
-<RivalFacts slug="probackup" />
+<RivalFacts slug="probackup" verdict={false} />

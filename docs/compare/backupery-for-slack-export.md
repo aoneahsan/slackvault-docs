@@ -26,4 +26,4 @@ SlackVault doesn't wait for an admin export. It copies the history continuously 
 
 4. **Sync, so messages newer than the export keep arriving.** [Syncing & your archive](/guides/syncing-and-archive) explains what each run picks up.
 
-<RivalFacts slug="backupery-for-slack-export" />
+<RivalFacts slug="backupery-for-slack-export" verdict={false} />

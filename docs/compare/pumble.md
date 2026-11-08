@@ -21,4 +21,4 @@ Set up the [Slack app](/guides/slack-app-setup), point it at a Firebase project 
 
 Pumble's pages did not state whether it saves Slack's public or private channels, DMs or threads, runs on a schedule, keeps the copy in storage you control, exports to open formats, works without admin rights, or puts records back into Slack. Those rows are left out.
 
-<RivalFacts slug="pumble" hideNotStated />
+<RivalFacts slug="pumble" hideNotStated verdict={false} />

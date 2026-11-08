@@ -21,4 +21,4 @@ Three pieces: a Slack app you own ([Slack app](/guides/slack-app-setup)), a Fire
 
 Rocket.Chat's pages did not say whether it saves Slack's public or private channels, DMs, threads or files, syncs on a schedule, works without admin rights, or sends records back into Slack, so those rows are not in the table.
 
-<RivalFacts slug="rocket-chat" hideNotStated />
+<RivalFacts slug="rocket-chat" hideNotStated verdict={false} />

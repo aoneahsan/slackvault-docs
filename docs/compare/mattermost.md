@@ -21,4 +21,4 @@ Start with the [Slack app](/guides/slack-app-setup), connect a Firebase project 
 
 Mattermost's pages did not state whether it saves Slack's public or private channels, DMs, threads or files, runs on a schedule, works without admin rights, or puts records back into Slack. Those rows are hidden below.
 
-<RivalFacts slug="mattermost" hideNotStated />
+<RivalFacts slug="mattermost" hideNotStated verdict={false} />

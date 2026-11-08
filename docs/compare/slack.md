@@ -25,4 +25,4 @@ SlackVault is for a team staying on the free plan for now. It copies messages an
 
 3. **Know what happens if you upgrade later.** There is no way yet to send records back into Slack. The history in your Firebase project stays there and doesn't flow back.
 
-<RivalFacts slug="slack" />
+<RivalFacts slug="slack" verdict={false} />

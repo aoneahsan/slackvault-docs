@@ -27,4 +27,4 @@ SlackVault answers a different problem: getting the history out in the first pla
 
 slack-export-viewer's pages did not state whether it covers private channels, DMs, threads or files, runs on a schedule, searches, needs admin rights, puts records back into Slack or has a free plan, so those rows are left out of the table below.
 
-<RivalFacts slug="slack-export-viewer" hideNotStated />
+<RivalFacts slug="slack-export-viewer" hideNotStated verdict={false} />

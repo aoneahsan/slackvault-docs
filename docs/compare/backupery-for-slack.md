@@ -25,4 +25,4 @@ SlackVault suits a team that would rather pay nothing and keep a live archive in
 
 <MergeSlackExport />
 
-<RivalFacts slug="backupery-for-slack" />
+<RivalFacts slug="backupery-for-slack" verdict={false} />

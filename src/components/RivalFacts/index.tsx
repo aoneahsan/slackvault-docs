@@ -99,14 +99,17 @@ export function LastChecked(): ReactNode {
 
 /**
  * One rival's dated tables. `hideNotStated` drops the side-by-side rows their pages did not state;
- * the guide then says once which those were.
+ * the guide then says once which those were. `verdict={false}` drops "Which one suits you" for a
+ * guide whose own opening already says who each product is for.
  */
 export default function RivalFacts({
   slug,
   hideNotStated = false,
+  verdict = true,
 }: {
   slug: string;
   hideNotStated?: boolean;
+  verdict?: boolean;
 }): ReactNode {
   const rival = RIVALS.find((candidate) => candidate.slug === slug);
   if (!rival) throw new Error(`RivalFacts: no record for "${slug}"`);
@@ -118,9 +121,13 @@ export default function RivalFacts({
         <Out href={rival.officialUrl}>Check {rival.name} for yourself</Out>. {facts.affiliation}
       </p>
 
-      <h2>Which one suits you</h2>
-      <p>{rival.strongerThere}</p>
-      <p>{rival.strongerHere}</p>
+      {verdict ? (
+        <>
+          <h2>Which one suits you</h2>
+          <p>{rival.strongerThere}</p>
+          <p>{rival.strongerHere}</p>
+        </>
+      ) : null}
 
       <h2>Prices</h2>
       {rival.prices.length === 0 ? (

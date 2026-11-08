@@ -21,4 +21,4 @@ It suits a small team for which a $5,000 a year minimum is out of reach and a se
 2. **Run SlackVault beside SpinBackup.** The [Slack app](/guides/slack-app-setup), [Firebase setup](/guides/firebase-setup) and [browser extension](/guides/browser-extension) pages take you to a first sync; [Syncing & your archive](/guides/syncing-and-archive) explains it.
 3. **Download what you need through SpinBackup's local downloads** while you still can. SlackVault's importer won't read those files, so keep them as they are.
 
-<RivalFacts slug="spin-ai" />
+<RivalFacts slug="spin-ai" verdict={false} />

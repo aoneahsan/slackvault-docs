@@ -21,4 +21,4 @@ SysCloud's exports are CSV and JSON in its own layout, which SlackVault's import
 2. **Connect SlackVault to your workspace:** [Slack app](/guides/slack-app-setup), [Firebase setup](/guides/firebase-setup), then the [browser extension](/guides/browser-extension).
 3. **Run a first sync and compare.** It copies what Slack's API returns for your plan today, which may be less than SysCloud holds. Weigh that before ending the contract. [Syncing & your archive](/guides/syncing-and-archive) covers what a sync captures.
 
-<RivalFacts slug="syscloud" />
+<RivalFacts slug="syscloud" verdict={false} />

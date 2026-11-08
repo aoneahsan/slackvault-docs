@@ -23,4 +23,4 @@ There's no import path. slack-archive's JSON isn't in the shape SlackVault's imp
 2. **Install the pieces:** a Slack app ([Slack app](/guides/slack-app-setup)), a Firebase project ([Firebase setup](/guides/firebase-setup)) and the [browser extension](/guides/browser-extension).
 3. **Run a first sync.** It starts from what Slack's API returns today, so expect overlap with your HTML archive, not a join between the two. [Syncing & your archive](/guides/syncing-and-archive) has the details.
 
-<RivalFacts slug="slack-archive" />
+<RivalFacts slug="slack-archive" verdict={false} />

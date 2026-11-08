@@ -21,4 +21,4 @@ Create the [Slack app](/guides/slack-app-setup), then a Firebase project ([Fireb
 
 Zulip's pages did not state whether it saves Slack's public or private channels, DMs, threads or files, runs on a schedule, works without admin rights, or puts records back into Slack. We left those rows out.
 
-<RivalFacts slug="zulip" hideNotStated />
+<RivalFacts slug="zulip" hideNotStated verdict={false} />

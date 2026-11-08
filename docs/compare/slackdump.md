@@ -26,4 +26,4 @@ SlackVault suits a team where nobody wants to run a terminal. The archive keeps 
 
 4. **Sync, and keep your Slackdump archive.** From then on the extension copies new messages while your browser runs ([Syncing & your archive](/guides/syncing-and-archive)). Your Slackdump folder holds real copies of your files on disk, and SlackVault handles files differently (see the limits below), so don't delete it.
 
-<RivalFacts slug="slackdump" />
+<RivalFacts slug="slackdump" verdict={false} />
