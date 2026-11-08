@@ -1,48 +1,50 @@
 /**
- * SlackVault — brand palette
- * Primary: Slack aubergine (#4a154b family). Accent: Slack blue (#36C5F0).
+ * SlackVault — brand palette (2026-11-08)
+ * Primary: strongroom green, OKLCH hue 140, the tile of the message-door mark
+ * (#32582A). Ink and page stay Infima's neutrals. Ramp and reasoning:
+ * the product repo's brand-kit/README.md.
  */
 
 :root {
-  --ifm-color-primary: #611f69;
-  --ifm-color-primary-dark: #571c5e;
-  --ifm-color-primary-darker: #4a154b;
-  --ifm-color-primary-darkest: #3d1140;
-  --ifm-color-primary-light: #722880;
-  --ifm-color-primary-lighter: #7e2c8d;
-  --ifm-color-primary-lightest: #9a4aa8;
+  --ifm-color-primary: #427138;
+  --ifm-color-primary-dark: #3b6631;
+  --ifm-color-primary-darker: #365e2d;
+  --ifm-color-primary-darkest: #2f5227;
+  --ifm-color-primary-light: #4c7d41;
+  --ifm-color-primary-lighter: #518445;
+  --ifm-color-primary-lightest: #619655;
 
-  --ifm-color-secondary: #36c5f0;
-  --ifm-color-success: #2eb67d;
-  --ifm-color-info: #36c5f0;
-  --ifm-color-warning: #ecb22e;
-  --ifm-color-danger: #e01e5a;
+  --ifm-color-secondary: #ebedf0;
+  --ifm-color-success: #427138;
+  --ifm-color-info: #4675a4;
+  --ifm-color-warning: #e69c3a;
+  --ifm-color-danger: #c92f33;
 
   --ifm-code-font-size: 92%;
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   --ifm-heading-font-weight: 700;
 
-  --docusaurus-highlighted-code-line-bg: rgba(97, 31, 105, 0.10);
+  --docusaurus-highlighted-code-line-bg: rgba(66, 113, 56, 0.10);
 
   /* Soft accent surfaces used by callouts + the author card */
-  --sv-surface-accent: rgba(54, 197, 240, 0.06);
-  --sv-surface-brand: rgba(97, 31, 105, 0.06);
+  --sv-surface-accent: rgba(247, 244, 230, 0.6);
+  --sv-surface-brand: rgba(66, 113, 56, 0.06);
 }
 
 /* Dark mode — keep brand recognisable, raise contrast */
 [data-theme='dark'] {
-  --ifm-color-primary: #d49bdd;
-  --ifm-color-primary-dark: #c87fd3;
-  --ifm-color-primary-darker: #c171ce;
-  --ifm-color-primary-darkest: #a948b8;
-  --ifm-color-primary-light: #e0b7e7;
-  --ifm-color-primary-lighter: #e6c5ec;
-  --ifm-color-primary-lightest: #f1ddf5;
+  --ifm-color-primary: #91c985;
+  --ifm-color-primary-dark: #85bc79;
+  --ifm-color-primary-darker: #7fb673;
+  --ifm-color-primary-darkest: #6da361;
+  --ifm-color-primary-light: #a2d496;
+  --ifm-color-primary-lighter: #acd9a2;
+  --ifm-color-primary-lightest: #c3e7bb;
 
-  --ifm-background-color: #170a19;
-  --ifm-background-surface-color: #211024;
+  --ifm-background-color: #0f130e;
+  --ifm-background-surface-color: #171c16;
 
-  --docusaurus-highlighted-code-line-bg: rgba(212, 155, 221, 0.18);
+  --docusaurus-highlighted-code-line-bg: rgba(145, 201, 133, 0.16);
 }
 
 /* CSS-only entrance animation (respects reduced motion) */

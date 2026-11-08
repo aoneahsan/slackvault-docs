@@ -10,7 +10,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'SlackVault Docs',
-  tagline: 'Back up and archive your Slack workspace to storage you control — at zero cost.',
+  tagline: 'Your team’s messages, kept in a database you own.',
   favicon: 'img/favicon.svg',
 
   // Production URL — served from Firebase Hosting site `slackvault-docs`.
@@ -46,7 +46,7 @@ const config: Config = {
     },
     {
       tagName: 'meta',
-      attributes: { name: 'theme-color', content: '#4a154b' },
+      attributes: { name: 'theme-color', content: '#32582A' },
     },
     {
       tagName: 'script',
