@@ -8,7 +8,7 @@ Keep this file and its `CLAUDE.md` mirror synchronized. Read only the guide pair
 
 ## Repository and deployment
 
-This separate public `aoneahsan/slackvault-docs` `main` repository contains the Docusaurus site. The product source is the sibling `../slackvault/`, not an old `projects/slackvault` checkout. `.github/workflows/deploy-pages.yml` runs `yarn install --immutable` and `yarn build` and deploys GitHub Pages on each `main` push; `static/CNAME` pins `slackvault-docs.aoneahsan.com`. Build and inspect locally in a controlled browser before pushing. Do not commit secrets or deploy this docs site to Firebase.
+This separate public `aoneahsan/slackvault-docs` `main` repository contains the Docusaurus site. The product source is the sibling `../slackvault/`, not an old `projects/slackvault` checkout. There are no GitHub Actions (owner's house rule): build locally with `yarn install --immutable && yarn build` and publish `build/` to the `gh-pages` branch by hand; `static/CNAME` pins `slackvault-docs.aoneahsan.com`. Build and inspect locally in a controlled browser before pushing. Do not commit secrets or deploy this docs site to Firebase.
 
 ## Commands
 

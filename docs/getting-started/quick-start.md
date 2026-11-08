@@ -41,7 +41,7 @@ Firebase's free tier includes 50,000 reads and 20,000 writes per day — more th
 
 The extension runs in your browser and handles all syncing, locally.
 
-1. Add SlackVault from the Chrome Web Store (or load it unpacked for development).
+1. Load SlackVault unpacked (see [Browser extension](/guides/browser-extension)); it is not in any extension store yet.
 2. Click the puzzle icon and **pin** SlackVault.
 3. Click the SlackVault icon to open setup.
 

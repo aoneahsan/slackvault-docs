@@ -2,7 +2,7 @@
 id: mattermost
 title: "Mattermost and SlackVault"
 sidebar_label: "Mattermost"
-description: "Mattermost replaces Slack and SlackVault keeps you on it, so there's no migration between them. Where to start with SlackVault."
+description: "Mattermost is where a team goes to leave Slack and host its own chat; SlackVault is for a team that stays. No migration between them, and where to start if you're staying."
 keywords: [mattermost, self hosted chat]
 last_update:
   date: 2026-11-07
@@ -11,10 +11,14 @@ last_update:
 
 import RivalFacts from '@site/src/components/RivalFacts';
 
-There's no migration here, because these do different jobs: Mattermost replaces Slack, and SlackVault keeps your team on Slack and copies its messages out. SlackVault has no import from Mattermost and no export built for it.
+Mattermost is self-hosted team chat; teams move to it so their history lives on their own servers. If you're ready to leave Slack and run the chat yourself, with retention and compliance export under your control, that is the move to make.
 
-## Where to start
+SlackVault is for the other decision: the team keeps using Slack as it is, and only its messages are copied into your own Firebase project. SlackVault has no import from Mattermost and no export built for it.
 
-If you're choosing between them and the team is staying on Slack: [Slack app setup](/guides/slack-app-setup), then [Firebase setup](/guides/firebase-setup), then the [browser extension](/guides/browser-extension). The first sync is covered in [Syncing & your archive](/guides/syncing-and-archive).
+## If the team is staying on Slack
 
-<RivalFacts slug="mattermost" />
+Start with the [Slack app](/guides/slack-app-setup), connect a Firebase project ([Firebase setup](/guides/firebase-setup)), and load the [browser extension](/guides/browser-extension). [Syncing & your archive](/guides/syncing-and-archive) walks through the first sync.
+
+Mattermost's pages did not state whether it saves Slack's public or private channels, DMs, threads or files, runs on a schedule, works without admin rights, or puts records back into Slack. Those rows are hidden below.
+
+<RivalFacts slug="mattermost" hideNotStated />

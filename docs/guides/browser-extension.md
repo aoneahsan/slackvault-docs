@@ -15,12 +15,10 @@ Slack / your Firebase. There's no SlackVault server in the path.
 
 ## Installation
 
-### Chrome Web Store (recommended)
+SlackVault is not in the Chrome Web Store or any other extension store yet. Until a listing goes
+live, install it unpacked. Chrome and Edge both take the same build.
 
-Add SlackVault from the Chrome Web Store. Microsoft Edge users can install it directly from the
-Chrome Web Store too.
-
-### Load unpacked (for development)
+### Load unpacked
 
 1. Download the extension build.
 2. Go to `chrome://extensions`.

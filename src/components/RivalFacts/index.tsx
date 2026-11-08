@@ -97,7 +97,17 @@ export function LastChecked(): ReactNode {
   return <strong>Last checked {longDate(facts.lastChecked)}.</strong>;
 }
 
-export default function RivalFacts({ slug }: { slug: string }): ReactNode {
+/**
+ * One rival's dated tables. `hideNotStated` drops the side-by-side rows their pages did not state;
+ * the guide then says once which those were.
+ */
+export default function RivalFacts({
+  slug,
+  hideNotStated = false,
+}: {
+  slug: string;
+  hideNotStated?: boolean;
+}): ReactNode {
   const rival = RIVALS.find((candidate) => candidate.slug === slug);
   if (!rival) throw new Error(`RivalFacts: no record for "${slug}"`);
 
@@ -153,7 +163,9 @@ export default function RivalFacts({ slug }: { slug: string }): ReactNode {
             </tr>
           </thead>
           <tbody>
-            {facts.features.map((feature) => {
+            {facts.features
+              .filter((feature) => !hideNotStated || rival.features[feature.key].status !== 'not-stated')
+              .map((feature) => {
               const theirs = rival.features[feature.key];
               return (
                 <tr key={feature.key}>

@@ -2,7 +2,7 @@
 id: rocket-chat
 title: "Rocket.Chat and SlackVault"
 sidebar_label: "Rocket.Chat"
-description: "Rocket.Chat replaces Slack and SlackVault keeps you on it, so there's no migration between them. Where to start with SlackVault."
+description: "Rocket.Chat is open-source chat you host instead of Slack; SlackVault keeps the team on Slack and keeps a copy. No migration between them, and how to start with SlackVault."
 keywords: [rocket.chat, open source team chat]
 last_update:
   date: 2026-11-07
@@ -11,10 +11,14 @@ last_update:
 
 import RivalFacts from '@site/src/components/RivalFacts';
 
-There's no migration here. Rocket.Chat is a chat your team would move to and run; SlackVault keeps the team on Slack and copies its messages into your Firebase project. SlackVault has no import from Rocket.Chat.
+Rocket.Chat is open-source team chat you host yourself, with retention policies and exports built in and a free edition to start on. If you want to own the chat itself, it is a real option, and it means moving the team.
 
-## Where to start
+SlackVault is for when leaving Slack isn't on the table and the only thing missing is a lasting copy of what was said and shared. It copies Slack's messages into your Firebase project and has no import from Rocket.Chat.
 
-If the team is staying on Slack: [Slack app setup](/guides/slack-app-setup), then [Firebase setup](/guides/firebase-setup), then the [browser extension](/guides/browser-extension). The first sync is covered in [Syncing & your archive](/guides/syncing-and-archive).
+## Starting with SlackVault instead
 
-<RivalFacts slug="rocket-chat" />
+Three pieces: a Slack app you own ([Slack app](/guides/slack-app-setup)), a Firebase project ([Firebase setup](/guides/firebase-setup)) and the [browser extension](/guides/browser-extension). Then follow [Syncing & your archive](/guides/syncing-and-archive) for the first run.
+
+Rocket.Chat's pages did not say whether it saves Slack's public or private channels, DMs, threads or files, syncs on a schedule, works without admin rights, or sends records back into Slack, so those rows are not in the table.
+
+<RivalFacts slug="rocket-chat" hideNotStated />

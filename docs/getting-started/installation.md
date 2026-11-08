@@ -19,7 +19,7 @@ workspace), a **Firebase project** (where your data is stored), and the **browse
 |-------------|-----|
 | A Slack workspace with **admin or owner** access | You need permission to install an app into the workspace. |
 | A **Firebase account** (free tier is enough) | Your backup is stored in your own Firestore database. |
-| A **Chromium browser** (Chrome or Edge) | The SlackVault extension runs here. Edge installs Chrome extensions directly from the Chrome Web Store. |
+| A **Chromium browser** (Chrome or Edge) | The SlackVault extension runs here. Edge loads the same unpacked build as Chrome. |
 | ~5 minutes | Estimated first-time setup. |
 
 ## The setup path
