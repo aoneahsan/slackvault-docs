@@ -171,6 +171,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/social-card.svg',
     metadata: [
+      { name: 'yandex-verification', content: 'bfb02722189028cf' },
       { name: 'description', content: 'Documentation for SlackVault — a zero-cost Slack backup and archive platform. Connect Slack, sync to your own Firebase, then search and export. Maintained by Ahsan Mahmood.' },
       { name: 'keywords', content: 'slack backup, slack archive, slack export, slack message backup, slack workspace backup, slack data backup, firebase slack backup, slack export tool, self-hosted slack backup, browser extension slack backup, slackvault' },
       { name: 'author', content: 'Ahsan Mahmood' },
