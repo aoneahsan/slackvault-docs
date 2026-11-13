@@ -241,6 +241,7 @@ const config: Config = {
             { label: 'Quick Start', to: '/getting-started/quick-start' },
             { label: 'FAQ', to: '/faq' },
             { label: 'Moving to SlackVault', to: '/compare' },
+            { label: 'White-label & licensing', to: '/white-label' },
           ],
         },
         {
@@ -249,7 +250,6 @@ const config: Config = {
             { label: 'SlackVault web app', href: 'https://slackvault.aoneahsan.com' },
             { label: 'Features', href: 'https://slackvault.aoneahsan.com/features' },
             { label: 'Install', href: 'https://slackvault.aoneahsan.com/install' },
-            { label: 'Get it on Google Play', href: 'https://play.google.com/store/apps/details?id=com.aoneahsan.slackvault' },
           ],
         },
         {

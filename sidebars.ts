@@ -62,6 +62,20 @@ const sidebars: SidebarsConfig = {
         'compare/pumble',
       ],
     },
+    {
+      type: 'category',
+      label: 'White-label & licensing',
+      collapsed: true,
+      description: 'Running SlackVault under your own name: what a licence delivers, setup, updates and verification.',
+      link: { type: 'doc', id: 'white-label/index' },
+      items: [
+        'white-label/what-you-get',
+        'white-label/setup-timeline',
+        'white-label/updates-and-renewals',
+        'white-label/verify-a-licence',
+        'white-label/faq',
+      ],
+    },
     'faq',
     {
       type: 'category',
