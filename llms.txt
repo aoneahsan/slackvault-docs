@@ -26,6 +26,18 @@ large language models.
 - [Installation](https://slackvault-docs.aoneahsan.com/getting-started/installation): prerequisites and the full setup path (Slack app, Firebase, extension, connect).
 - [Quick Start](https://slackvault-docs.aoneahsan.com/getting-started/quick-start): the 5-minute first backup.
 
+## White-label & licensing
+
+A business can run SlackVault under its own name on its own domain; we host and update it. The web app is offered
+today. Prices are on https://slackvault.aoneahsan.com/white-label/pricing, read from our licensing service.
+
+- [White-label and licensing](https://slackvault-docs.aoneahsan.com/white-label): what a licence is, and a source buyout.
+- [What a white-label licence delivers](https://slackvault-docs.aoneahsan.com/white-label/what-you-get): the web group, and why mobile and the extension are not offered yet.
+- [Setting up a white-label copy](https://slackvault-docs.aoneahsan.com/white-label/setup-timeline): domain, branding, Slack app registration, deploy.
+- [Updates and renewals](https://slackvault-docs.aoneahsan.com/white-label/updates-and-renewals): included months and renewals.
+- [Verify a SlackVault licence](https://slackvault-docs.aoneahsan.com/white-label/verify-a-licence): by key or domain; the licence file.
+- [White-label questions](https://slackvault-docs.aoneahsan.com/white-label/faq)
+
 ## Guides
 
 - [Create the Slack app](https://slackvault-docs.aoneahsan.com/guides/slack-app-setup): create from manifest, copy credentials, install to workspace.
