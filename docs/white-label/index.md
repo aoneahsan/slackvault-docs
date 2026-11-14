@@ -21,7 +21,10 @@ There are two ways to buy:
 - **A licence.** We host and update your copy; no source code changes hands, and we may license SlackVault to
   others too. See [what is delivered](./what-you-get.md).
 - **A source buyout.** You get the code of the repository that builds SlackVault, and we stop selling it to
-  anyone else.
+  anyone else. The buyout carries a royalty: you pay us 7% of the gross revenue SlackVault earns, not counting
+  sales tax or VAT collected, every quarter with a revenue statement. It runs for as long as SlackVault earns
+  revenue and is still owed after you sell it on. The
+  [licence terms](https://slackvault.aoneahsan.com/white-label/license-terms) set it out.
 
 Prices are not repeated here. The [pricing page](https://slackvault.aoneahsan.com/white-label/pricing) reads them from our licensing service
 and works out the total for what you pick; the [buyout page](https://slackvault.aoneahsan.com/white-label/buyout) shows the buyout price.

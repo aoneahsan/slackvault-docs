@@ -21,7 +21,8 @@ Only with a buyout. A licence is SlackVault run for you under your brand.
 
 ## Can someone else buy the same licence?
 
-Yes, until someone buys SlackVault outright. After that nobody new can, and existing licences keep their terms.
+Yes, until someone buys SlackVault outright. After that nobody new can, existing licences keep their terms, and the
+buyer pays us a 7% royalty on the gross revenue SlackVault earns.
 
 ## Will my copy be in the Slack Marketplace?
 
@@ -32,7 +33,7 @@ listing.
 
 In each team's own Firebase project, the same as on SlackVault itself.
 
-## Can I pay by card now?
+## How do I pay?
 
-Not yet. Send the request on the [pricing page](https://slackvault.aoneahsan.com/white-label/pricing) and we reply by email with your quote
-and the next step.
+By bank transfer to our Wise account. Send the request on the [pricing page](https://slackvault.aoneahsan.com/white-label/pricing) and we reply
+by email with your quote and the next step. Once we have confirmed your transfer, the licence key arrives by email.

@@ -31,7 +31,7 @@ large language models.
 A business can run SlackVault under its own name on its own domain; we host and update it. The web app is offered
 today. Prices are on https://slackvault.aoneahsan.com/white-label/pricing, read from our licensing service.
 
-- [White-label and licensing](https://slackvault-docs.aoneahsan.com/white-label): what a licence is, and a source buyout.
+- [White-label and licensing](https://slackvault-docs.aoneahsan.com/white-label): what a licence is, and a source buyout (which carries a 7% royalty on the gross revenue SlackVault earns, for as long as it earns). Licences are paid by Wise bank transfer.
 - [What a white-label licence delivers](https://slackvault-docs.aoneahsan.com/white-label/what-you-get): the web group, and why mobile and the extension are not offered yet.
 - [Setting up a white-label copy](https://slackvault-docs.aoneahsan.com/white-label/setup-timeline): domain, branding, Slack app registration, deploy.
 - [Updates and renewals](https://slackvault-docs.aoneahsan.com/white-label/updates-and-renewals): included months and renewals.
