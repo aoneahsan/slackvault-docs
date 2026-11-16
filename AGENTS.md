@@ -2,6 +2,8 @@
 
 **Last Updated:** 2026-10-21
 
+<!-- fleet:node-26-13-1 v1 --> Node 26.13.1 LTS (.nvmrc), packages latest — 2026-11-16
+
 **Last context pass:** 2026-10-21. **Next routine context pass:** 2026-11-20. The workspace tracker at `01-code/docs/tracking/project-context-budget-tracker.json` is the fleet record. A new tree, hard cap breach, or proven stale instruction may justify an earlier review.
 
 Keep this file and its `CLAUDE.md` mirror synchronized. Read only the guide pair for the surface being changed, plus the product root and workspace guides. Use Yarn for local packages. Never install or copy an owner-created client package into this owner project. Real `.env` values and secrets stay local or under `~/.secrets/`; private Git visibility is not a secrets boundary. Historical tracked `.env` files require credential review. Do not deploy the legacy Firebase backend while the owner prepares a Supabase redevelopment.
