@@ -8,6 +8,12 @@
 > with or endorsed by Slack. A web app then lets users browse, full-text
 > search, and export their archived Slack history. Author: Ahsan Mahmood (https://aoneahsan.com).
 
+
+## Get SlackVault
+
+- [All apps](https://slackvault-docs.aoneahsan.com/apps): every released surface.
+- [SlackVault web app](https://slackvault.aoneahsan.com)
+
 ## About
 
 SlackVault runs on a zero-server architecture: the browser extension performs the sync
