@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import { OTHER_PLATFORMS } from './src/data/platforms';
 
 // ---------------------------------------------------------------------------
 // SlackVault — Documentation site config
@@ -225,15 +226,26 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://slackvault.aoneahsan.com',
-          label: 'Product site',
+          type: 'dropdown',
+          label: 'Get SlackVault',
           position: 'right',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All apps', to: '/apps' },
+          ],
         },
       ],
     },
     footer: {
       style: 'dark',
       links: [
+        {
+          title: 'Get SlackVault',
+          items: [
+            ...OTHER_PLATFORMS.map((platform) => ({ label: platform.name, href: platform.href })),
+            { label: 'All apps', to: '/apps' },
+          ],
+        },
         {
           title: 'Documentation',
           items: [
@@ -248,7 +260,6 @@ const config: Config = {
         {
           title: 'Product',
           items: [
-            { label: 'SlackVault web app', href: 'https://slackvault.aoneahsan.com' },
             { label: 'Features', href: 'https://slackvault.aoneahsan.com/features' },
             { label: 'Install', href: 'https://slackvault.aoneahsan.com/install' },
           ],
